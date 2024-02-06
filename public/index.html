@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<h1>Customers</h1>
+<table>
+    <thead>
+      <tr>
+      <td>Name</td>
+      <td>eMail</td>
+      </tr>
+    </thead>
+    <tbody>
+    <tr data-id="1"><td>foo</td><td>foo@example.com</td><td><button type="button" data-action="edit">Edit</button></td></tr>
+    <tr data-id="2"><td>bar</td><td>bar@example.com</td><td><button type="button" data-action="edit">Edit</button></td></tr>
+    <tr data-id="3"><td>baz</td><td>baz@example.com</td><td><button type="button" data-action="edit">Edit</button></td></tr>
+    </tbody>
+    <script type="shadow/graft" data-ref="prev-sibling" data-id="edi-table">{ "type":"customer" }</script>
+</table>
+
+<h1>Products</h1>
+<table>
+    <thead>
+    <tr>
+        <td>Name</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-id="1"><td>foo</td><td><button type="button" data-action="edit">Edit</button></td></tr>
+    <tr data-id="2"><td>bar</td><td><button type="button" data-action="edit">Edit</button></td></tr>
+    <tr data-id="3"><td>baz</td><td><button type="button" data-action="edit">Edit</button></td></tr>
+    </tbody>
+    <script type="shadow/graft" data-ref="prev-sibling" data-id="edi-table">{ "type":"product" }</script>
+</table>
+
+</body>
+</html>
+

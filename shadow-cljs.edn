@@ -1,0 +1,16 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[com.thheller/shadow-graft "0.9.0"]]
+
+ :dev-http
+ {8060 "public"}
+
+ :builds
+ {:example
+  {:target :browser
+   :modules {:main {:init-fn example.app/init}}}}}
